@@ -1,6 +1,7 @@
 /*REMEMBER TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
 /* 👀 This is your data ⬇ */
+
 const originalFlavors = [
     "Banana Nut Fudge",
     "Black Walnut",
@@ -49,6 +50,12 @@ function copy(/*your code here*/){
     /*your code here*/
 }    
 
+function copy(array){
+    let flavorsCopy = [...array];
+    return flavorsCopy;
+}
+console.log(copy(originalFlavors))
+
 
 
 
@@ -68,6 +75,13 @@ function is31Flavors(/*your code here*/){
    /*your code here*/
 }
 
+function is31Flavors(array){
+    if(array.length = 31);
+    return true
+}
+
+console.log(is31Flavors(originalFlavors))
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
 
@@ -84,6 +98,13 @@ Use the addFlavor function below to do the following:
 function addFlavor(/*your code here*/){
    /*your code here*/
 }
+
+fucntion addFlavor(originalFlavors){
+    originalFlavors.unshift('Rainboe Sherbert');
+    return originalFlavors
+}
+
+console.log(addFlavor(originalFlavors))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
