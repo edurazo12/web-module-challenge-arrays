@@ -122,6 +122,12 @@ function removeLastFlavor(/*your code here*/){
    /*your code here*/
 }
 
+function removeLastFlavor(originalFlavors){
+    originalFlavors.pop()
+    return originalFlavors
+}
+
+console.log(removeLastFlavor(originalFlavors))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -138,6 +144,13 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(/*your code here*/){
     /*your code here*/
 }
+
+function getFlavorByIndex(originalFlavors, i){
+    console.log(originalFlavors[i]);
+    return orignalFlavors[i]
+}
+
+console.log(getFlavorByIndex(originalFlavors, 5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -159,6 +172,17 @@ function removeFlavorByName(/*your code here*/){
     /*your code here*/
 }
 
+
+function removeFlavorByName(originalFlavors, flav) {
+    for (let i = 0; i < originalFlavors.length; i++) {
+        if (originalFlavors[i] === flav) {
+            originalFlavors.splice(i, 1);
+        }
+    }
+        return originalFlavors
+}
+
+console.log(removeFlaborByName(originalFlavor, "Rocky Road"))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -183,6 +207,15 @@ Use the filterByWord function below to do the following:
 
 function filterByWord(/*your code here*/){
     /*your code here*/
+}
+
+function filterByWord(array, word){
+    let filteredArray = [];
+for(let i = 0; i < originalFlavors.length; i++){
+    if(originalFlavors[i].includes(word)){
+        filteredArray.push(originalFlavors[i]);
+    }
+}
 }
 
 
